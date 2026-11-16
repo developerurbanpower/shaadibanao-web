@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Account & Data Deletion - ShaadiBanao</title>
+  <meta name="description" content="Request permanent deletion of your ShaadiBanao matrimonial account (com.shaadibanao.app) and associated data in accordance with Google Play policies and DPDP Act 2023.">
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="assets/icon.png" alt="ShaadiBanao Logo" class="nav-logo">
+        <span class="nav-brand-text">Shaadi<span>Banao</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="privacy-policy.html" class="nav-link">Privacy Policy</a></li>
+        <li><a href="terms.html" class="nav-link">Terms</a></li>
+        <li><a href="contact.html" class="nav-link">Support</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="https://play.google.com/store/apps/details?id=com.shaadibanao.app&hl=en" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Download App</a>
+        <button class="nav-toggle" aria-label="Toggle Navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HEADER -->
+  <div class="legal-header">
+    <div class="container">
+      <h1>Account & Data Deletion Portal</h1>
+      <p>Official web portal for users of <strong>ShaadiBanao</strong> (Package Name: <code>com.shaadibanao.app</code>) to request permanent account removal.</p>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+    <article class="legal-content">
+      <div class="legal-box">
+        <strong>Google Play Developer Policy & DPDP Act Compliance:</strong>
+        In accordance with Google Play’s user data policy and India’s Digital Personal Data Protection Act 2023, you have the absolute right to delete your ShaadiBanao account and all associated personal data at any time, directly through this web page or within the mobile application.
+      </div>
+
+      <h2>Method 1: Instant In-App Deletion (Recommended)</h2>
+      <p>If you still have the ShaadiBanao app installed on your Android device:</p>
+      <ol style="margin-left: 20px; line-height: 1.8; color: var(--text-main); margin-bottom: 24px;">
+        <li>Open the <strong>ShaadiBanao</strong> application.</li>
+        <li>Tap on your <strong>Profile Avatar</strong> in the top navigation bar.</li>
+        <li>Go to <strong>Settings</strong> ➔ <strong>Account & Security</strong>.</li>
+        <li>Scroll down to <strong>Account Actions</strong> and tap <strong>Delete Account</strong>.</li>
+        <li>Confirm your mobile number with a quick OTP. Your profile and images will be permanently erased immediately.</li>
+      </ol>
+
+      <h2>Method 2: Web-Based Deletion Request</h2>
+      <p>
+        If you have uninstalled the app or cannot access your device, please fill out the official deletion request form below. Our Data Safety Team will process your request and permanently erase your account data within <strong>48 hours</strong>.
+      </p>
+
+      <div class="contact-form-wrapper" style="margin: 32px 0; background: #FFFDF9; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 36px;">
+        <h3 style="font-family: var(--font-serif); font-size: 24px; color: var(--text-main); margin-bottom: 8px;">
+          Submit Account Deletion Request
+        </h3>
+        <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 24px;">
+          Please enter the details associated with the registered ShaadiBanao account you wish to purge.
+        </p>
+
+        <form id="deleteAccountForm">
+          <div class="form-group">
+            <label for="delMobile" class="form-label">Registered Mobile Number (with Country Code) *</label>
+            <input type="tel" id="delMobile" class="form-input" placeholder="+91 98765 43210" required>
+          </div>
+
+          <div class="form-group">
+            <label for="delEmail" class="form-label">Registered Email Address (Optional)</label>
+            <input type="email" id="delEmail" class="form-input" placeholder="e.g. yourname@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="delProfileId" class="form-label">ShaadiBanao Profile ID (If known)</label>
+            <input type="text" id="delProfileId" class="form-input" placeholder="e.g. SB-109482">
+          </div>
+
+          <div class="form-group">
+            <label for="delReason" class="form-label">Primary Reason for Deletion *</label>
+            <select id="delReason" class="form-input" required>
+              <option value="" disabled selected>Select a reason</option>
+              <option value="found-shaadibanao">Found my life partner on ShaadiBanao! (Congratulations!)</option>
+              <option value="found-elsewhere">Found my life partner through family / elsewhere</option>
+              <option value="privacy">Privacy concerns or personal preference</option>
+              <option value="taking-break">Taking a temporary break from matchmaking</option>
+              <option value="not-satisfied">Not satisfied with match recommendations</option>
+              <option value="other">Other reason</option>
+            </select>
+          </div>
+
+          <div class="form-group" style="margin-top: 16px;">
+            <label style="display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: var(--text-main); cursor: pointer;">
+              <input type="checkbox" required style="margin-top: 3px;">
+              <span>I confirm that I am requesting the permanent deletion of my account. I understand that all matches, Kundli Milan reports, chat transcripts, and photos will be irreversibly erased and cannot be restored.</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; padding: 16px; font-size: 16px; justify-content: center; margin-top: 16px; background: #C62828;">
+            Permanently Delete My Account & Data ➔
+          </button>
+        </form>
+      </div>
+
+      <h2>3. What Happens to Your Data Upon Deletion?</h2>
+      <p>When an account is deleted through either Method 1 or Method 2, our automated data purge protocol executes the following actions:</p>
+      <ul>
+        <li><strong>Profile Data Eradication:</strong> Your name, bio, birth details, astrological charts, religion, caste, occupation, and family preferences are permanently scrubbed from our active databases.</li>
+        <li><strong>Media Storage Purge:</strong> All profile photographs and government ID verification snapshots stored on our secure cloud buckets (AWS S3) are permanently destroyed.</li>
+        <li><strong>Chat History & Interactions:</strong> All direct messages, expressions of interest, shortlists, and blocklists are permanently removed.</li>
+        <li><strong>Search Index Invalidation:</strong> Your profile is immediately de-indexed and will never appear in search results, daily recommendations, or Kundli Milan comparisons.</li>
+      </ul>
+
+      <h2>4. Data Retention Exceptions (Legal & Regulatory Mandates)</h2>
+      <p>
+        In strict adherence to applicable Indian laws and regulatory guidelines, we retain limited transactional data as follows:
+      </p>
+      <ul>
+        <li><strong>Financial & Invoicing Records:</strong> If you purchased a premium subscription, payment invoice records (GST invoice number, date, amount, payment transaction ID) are retained for <strong>7 years</strong> solely to comply with the <strong>Goods and Services Tax (GST) Act</strong> and <strong>Income Tax Act, 1961</strong>. No credit card or banking details are retained by us.</li>
+        <li><strong>Fraud & Security Prevention:</strong> In cases where an account was banned or flagged for criminal impersonation, financial extortion, or severe harassment, an encrypted hash of the identifier may be retained in our safety blacklist to prevent the bad actor from registering new accounts.</li>
+      </ul>
+
+      <h2>5. Need Direct Assistance?</h2>
+      <p>
+        If you experience any issues submitting your deletion request, you can email our Privacy Support Desk directly at <a href="mailto:privacy@shaadibanao.app" style="color:var(--primary); font-weight:600;">privacy@shaadibanao.app</a> or our Grievance Officer at <a href="mailto:grievance@shaadibanao.app" style="color:var(--primary); font-weight:600;">grievance@shaadibanao.app</a> with the subject line <em>"Account Deletion Request - [Your Mobile Number]"</em>.
+      </p>
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Shaadi<span>Banao</span></h3>
+          <p>
+            India’s premium matrimonial and matchmaking platform dedicated to bringing compatible life partners together through trust, transparency, and Vedic harmony.
+          </p>
+          <small style="color:var(--gold-light);">Registered App Package: <code>com.shaadibanao.app</code></small>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#kundli">Kundli Milan</a></li>
+            <li><a href="index.html#privacy-shield">Privacy Shield</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal & Policies</h4>
+          <ul class="footer-links">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="refund-policy.html">Refund & Cancellation</a></li>
+            <li><a href="delete-account.html">Request Account Deletion</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support & Grievance</h4>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html#grievance">Grievance Officer</a></li>
+            <li><a href="mailto:support@shaadibanao.app">support@shaadibanao.app</a></li>
+            <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 ShaadiBanao Technologies Pvt. Ltd. All rights reserved.</p>
+        <p>Compliant with Information Technology Rules (Intermediary Guidelines) 2021 & DPDP Act 2023.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

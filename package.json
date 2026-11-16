@@ -1,0 +1,19 @@
+{
+  "name": "shadibanao-web",
+  "version": "1.0.0",
+  "description": "ShaadiBanao Official Matrimony Website & Play Store Compliance Pages",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "serve": "node server.js"
+  },
+  "keywords": [
+    "shaadibanao",
+    "matrimony",
+    "privacy-policy",
+    "delete-account"
+  ],
+  "author": "ShaadiBanao Technologies Pvt. Ltd.",
+  "license": "ISC"
+}
